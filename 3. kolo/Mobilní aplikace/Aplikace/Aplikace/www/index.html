@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <script type="text/javascript" src="scripts/framework7.js"></script>
+    
+    
+</head>
+<body>
+    <img src="images/weather.png" class="obrazek"></img>
+    <div class="panel-overlay">
+        <div class="panel panel-left panel-cover">
+            <div class="content-block">
+                    <p><a href="dashboard.html" class="otevrit2 prvni external">DASHBOARD</a></p>
+                    <p id="vloz"></p>
+                    <p><a href="video.html" class="otevrit2 druhy external">VIDEO PŘENOS</a></p>
+                    <p id="vloz2"></p>
+                    <p><a href="http://malinovky5.ssinfotech.cz" class="otevrit2 treti external">WEBOVÁ STRÁNKA</a></p>
+                    <p id="vloz3"></p>
+
+                    <p><a href="#" class="close-panel">Close me</a></p>
+                    <script>
+                        var myApp = new Framework7({
+                            tapHoldPreventClicks: true,
+                            tapHold: true
+                        });
+
+                        var $$ = Dom7;
+
+                        $$("#vloz").prepend("<p class='text'>Zvolením této nabídky vám bude zobrazen seznam informací týkající se aktuální teploty, vlhkosti, směru a rychlosti větru, srážek a tlaku na naší meteorologické stanici</p>");
+                        $$("#vloz2").prepend("<p class='text'>Tato nabídka vás přesměruje na sledování video streamu z naší meteorologické stanice</p>");
+                        $$("#vloz3").prepend("<p class='text'>Zvolte nabídku pro přesměrování na naše webové stránky</p>");
+                        $$("#vloz").hide();
+                        $$("#vloz2").hide();
+                        $$("#vloz3").hide();
+
+                        $$('.prvni').on('taphold', function () {
+                            $$("#vloz2").hide();
+                            $$("#vloz3").hide();
+                            $$("#vloz").show();
+                        });
+                        $$('.druhy').on('taphold', function () {
+                            $$("#vloz").hide();
+                            $$("#vloz3").hide();
+                            $$("#vloz2").show();
+                        });
+                        $$('.treti').on('taphold', function () {
+                            $$("#vloz").hide();
+                            $$("#vloz2").hide();
+                            $$("#vloz3").show();
+                        });
+                    </script>
+                </div>
+        </div>
+    </div>
+    
+    <div class="page-content">
+        <div class="content-block">
+            <p><a href="#" class="open-panel otevrit">Spustit</a></p>
+        </div>
+    </div>
+
+</body>
+</html> 

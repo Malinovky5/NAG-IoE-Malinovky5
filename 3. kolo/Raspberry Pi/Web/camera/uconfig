@@ -1,0 +1,9 @@
+annotation SSINFOTECH %Y %D.%M %h:%m
+anno_background 0
+video_stabilisation 0
+video_width 768
+video_height 768
+video_fps 60
+MP4Box_fps 60
+image_width 768
+image_height 768

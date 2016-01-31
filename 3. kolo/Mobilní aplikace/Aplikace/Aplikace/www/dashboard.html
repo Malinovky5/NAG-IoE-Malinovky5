@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <script type="text/javascript" src="scripts/framework7.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="center">DASHBOARD</div>
+            <div class="right">
+                <a href="menu.html" class="link icon-only external">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <form id="my-form" class="list-block">
+        <ul>
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+                        
+                        <div class="item-title label">SMĚR VĚTRU</div>
+                        <div class="right">
+                            <input type="text" name="Direction" placeholder="0">
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+
+                        <div class="item-title label">SRÁŽKY</div>
+                        <div class="right">
+                            <input type="text" name="Rain" placeholder="0 mm/h">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+
+                        <div class="item-title label">RYCHLOST VĚTRU</div>
+                        <div class="right">
+                            <input type="text" name="Speed" placeholder="0 m/s">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+
+                        <div class="item-title label">TLAK</div>
+                        <div class="right">
+                            <input type="text" name="Pressure" placeholder="0 hPa">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+
+                        <div class="item-title label">VLHKOST</div>
+                        <div class="right">
+                            <input type="text" name="Humidity" placeholder="0 %">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+
+                        <div class="item-title label">TEPLOTA VZDUCHU</div>
+                        <div class="right">
+                            <input type="text" name="Temperature" placeholder="0 °C">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+
+                        <div class="item-title label">INTENZITA SVĚTLA</div>
+                        <div class="right">
+                            <input type="text" name="Lux" placeholder="0 lux">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </form>
+    <a href="menu.html">Go to About page</a>
+    <div class="content-block">
+        <a href="#" class="button form-from-json">Aktualizovat</a>
+    </div>
+    
+    <script type="text/javascript" src="scripts/dashboard.js"></script>
+
+</body>
+</html>
+
